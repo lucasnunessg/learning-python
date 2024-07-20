@@ -1,17 +1,11 @@
+a = 5
+b = "oii"
+c = [1, 2, 3, 4, 5, 6]
+d = ('oi', 4)
 
-# Suponha que o preço de capa de um livro seja R$ 24,20, mas as livrarias recebem um desconto de 40%. 
-# O transporte custa 3,00 para o primeiro exemplar e 
-# 75 centavos para cada exemplar adicional. Qual é o custo total de atacado 
-# para 60 cópias? Escreva uma expressão que receba o custo total e a imprima.
+d_list = d + ('adicionei um novo valor a tupla', 'mais um',)
+d_list = list(d)#converti o valor de uma tupla para list
+d_list[1] = ('modifiquei o valor')#modifiquei o segundo item da lista 
+d = tuple(d_list)#modifiquei de volta pra uma tuple
 
-
-books = 60
-
-book_price = (1 - 0.4) * 24.20
-
-logistic = 3 + (books - 1) * 0.75
-
-cost = books * book_price + logistic
-
-cost
-
+print(d)# ('oi', 'modifiquei o valor')
