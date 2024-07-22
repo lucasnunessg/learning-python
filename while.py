@@ -1,4 +1,3 @@
-
 n = 10
 soma = 0
 numero = 1
